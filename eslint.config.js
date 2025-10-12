@@ -17,6 +17,12 @@ export default [
     },
     rules: {
       'prettier/prettier': 'error',
+      'import/no-unresolved': [
+      'error',
+      {
+        ignore: ['^\\.\\./.*\\.(sass|scss|css)$']  // Игнорирует .sass, .scss, .css в относительных путях
+      }
+    ]
     },
   },
   pluginJs.configs.recommended,
