@@ -1,0 +1,137 @@
+.ourTeam {
+  margin-bottom: 165px;
+  @include tablet {
+    margin-bottom: 100px;
+  }
+  @include mobile{
+    margin-bottom: 60px;                                           
+  }
+  &__quote {
+    @include flex-all-between;
+    gap: 30px;
+    margin-bottom: 160px;
+    padding: 80px 0;
+    @include tablet {
+      flex-direction: column;
+      padding: 0px;
+      align-items: flex-start;
+      margin-bottom: 80px;
+    }
+  }
+
+  &__quote-title {
+    max-width: 480px;
+    font-weight: 600;
+    line-height: 68px;
+    letter-spacing: -2px;
+  }
+
+  &__quote-text {
+    max-width: 522px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 120%;
+  }
+
+  &__title {
+    max-width: 890px;
+    margin-bottom: 24px;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: -2px;    
+    
+  }
+
+  &__text {
+    max-width: 534px;
+    margin-bottom: 80px;
+    color: var(--neutral-color-60);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 170%;
+  }
+
+  &__slider {
+    position: relative;
+    margin-bottom: 105px;
+    &-btns {
+      @include flex-all-center;
+      position: absolute;
+      top: 35%;
+      left: 33%;
+      z-index: var(--z-index-2);
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+      background-color: #fff;
+      transform: translateX(-50%);
+
+      @include tablet {
+        display: none;
+      }
+
+    }
+  }
+
+  &__slide {
+    max-width: 379px;
+  }
+
+  &__img {
+    margin-bottom: 16px;
+  }
+
+  &__inner {
+    @include flex-all-between
+  }
+
+  &__name {
+    margin-bottom: 8px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 150%;
+  }
+
+  &__list {
+    @include flex-all-between;
+    gap: 8px;
+  }
+
+  &__position {
+    color: var(--neutral-color-60);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 120%;
+  }
+
+  &__join {
+    @include flex-all-center;
+    gap: 80px;
+    @include tablet {
+      flex-direction: column;
+      gap: 40px;
+      align-items: flex-start;
+    }
+  }
+  &__join-title {
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: -2px;
+  }
+  &__join-inner{
+    max-width: 501px;
+  }
+  &__join-text {
+    color: var(--neutral-color-150);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 170%;
+    letter-spacing: -.5px;
+    margin-bottom: 24px;
+  }
+  &__join-btn {
+    color: var(--neutral-color-100);
+    font-weight: 600;
+  }
+}
+
