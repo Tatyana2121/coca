@@ -18,10 +18,10 @@ export const useOurTeamSlider = () => {
     slidesPerView: 'auto',
     spaceBetween: 32,
     loop: true,
-        breakpoints: {
+    breakpoints: {
       993: {
         slidesPerView: 3,
       },
-    },                         
+    },
   });
 };
