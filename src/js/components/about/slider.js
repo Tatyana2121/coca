@@ -7,6 +7,7 @@ export const useAboutSlider = () => {
     spaceBetween: 32,
     loop: true,
     centeredSlides: true,
+    autoHeight: true,
     slideActiveClass: 'hero__slide-middle',
     slidePrevClass: 'hero__slide-first',
     breakpoints: {

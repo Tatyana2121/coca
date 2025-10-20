@@ -51,7 +51,6 @@
   }
   &__slider {
     position: relative;
-
     &-btns {
       @include flex-all-center;
       position: absolute;
