@@ -9,7 +9,21 @@ export const useAboutSlider = () => {
     centeredSlides: true,
     slideActiveClass: 'hero__slide-middle',
     slidePrevClass: 'hero__slide-first',
-    // slideNextClass: 'my-next-slide'
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 16,
+        centeredSlides: false,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 24,
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 32,
+      },
+    },
   });
 };
 
